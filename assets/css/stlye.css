@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&display=swap');
+
+body {
+    margin: 0 auto;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-size: 13px;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    background-color: hsl(210, 46%, 95%);
+}
+
+main {
+    margin: 0 auto;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    max-width: 1440px;
+    width: 80%;
+    gap: 30px;
+    line-height: 20px;
+}
+
+.right {
+    width: 20%;
+}
+
+.left {
+    width: 75%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    gap: 30px;
+}
+
+.width1x {
+    width: calc(33% - 15px);
+}
+
+.width2x {
+    flex: calc(67% - 15px);
+}
+
+h2 {
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+    opacity: 0.7;
+}
+
+img {
+    height: 36px;
+    border-radius: 100%;
+}
+
+.low-opacity {
+    opacity: 0.5;
+}
+
+.card {
+    border-radius: 10px;
+    padding: 24px;
+    box-sizing: border-box;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    box-shadow: 1px 1px 10px hsl(0, 0%, 81%);
+}
+
+.card-info {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.person-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.purple-card {
+    background-image: url(../images/bg-pattern-quotation.svg);
+    background-color: hsl(263, 55%, 52%);
+    background-repeat: no-repeat;
+    background-position-x: 85%;
+}
+
+.grey-card {
+    background-color: hsl(217, 19%, 35%);
+}
+
+.white-card {
+    background-color: white;
+    color: hsl(219, 29%, 14%);
+    
+}
+
+.dark-grey-card {
+    background-color: hsl(219, 29%, 14%);
+}
+
+@media screen and (max-width: 720px) {
+    body {
+        padding: 60px 30px;
+        height: auto;
+    }
+    main {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .left {
+        flex-direction: column;
+        flex-wrap: nowrap;
+        width: 100%;
+    }
+    
+    .right {
+        width: 100%;
+    }
+    .card {
+        width: auto;
+    }
+}
